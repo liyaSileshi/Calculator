@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <style>
+      .calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 'a a a a'
+                            'b c d e'
+                            'f g h i'
+                            'j k l m'
+                            'n o p q'
+                            'r r s t';
+       
+      }
+      .answer{
+          grid-area: a;
+      }
+      .power{
+          grid-area: b;
+      }
+      .both{
+          grid-area: c;
+      }
+      .percent{
+          grid-area: d;
+      }
+      .divide{
+          grid-area: e;
+      }
+      .multiply{
+          grid-area: i;
+      }
+      .sub{
+          grid-area: m;
+      }
+      .add{
+          grid-area: q;
+      }
+      .nine {
+          grid-area: h;
+      }
+      .eight {
+          grid-area: g;
+      }
+      .seven {
+          grid-area: f;
+      }
+      .six {
+          grid-area: l;
+      }
+      .five {
+          grid-area: k;
+      }
+      .four {
+          grid-area: j;
+      }
+      .three {
+          grid-area: p;
+      }
+      .two {
+          grid-area: o;
+      }
+      .one {
+          grid-area: n;
+      }
+      .zero {
+          grid-area: r;
+      }
+      .point {
+          grid-area: s;
+      }
+      .equal{
+          grid-area: t;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="calculator">
+      <div class="answer">3.14</div>
+
+      <button class= 'power'>C</button>
+      <button class = 'both'>+/-</button>
+      <button class='percent'>%</button>
+
+      <button class='divide'>/</button>
+      <button class='multiply'>X</button>
+      <button class='sub'>-</button>
+      <button class='add'>+</button>
+      <button class='equal'>=</button>
+
+      <button class='nine'>9</button>
+      <button class='eight'>8</button>
+      <button class='seven'>7</button>
+
+      <button class='six'>6</button>
+      <button class='five'>5</button>
+      <button class='four'>4</button>
+
+      <button class='three'>3</button>
+      <button class='two'>2</button>
+      <button class='one'>1</button>
+
+      <button style = 'grid-area: r' class='zero'>0</button>
+      <button class='point'>.</button>
+      
+
+    </div>
+
+  </body>
+</html>
