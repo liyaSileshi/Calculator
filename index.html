@@ -4,6 +4,9 @@
     <title></title>
 
     <style>
+        /* body{
+            
+        } */
       .calculator {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -14,7 +17,27 @@
                             'j k l m'
                             'n o p q'
                             'r r s t';
-       
+        
+      }
+      button{
+          padding: 3em;
+          border-color:black;
+      }
+      .op{
+          background-color: orange;
+          color: white;
+          font-size: 1em;
+      }
+      .num{
+          background-color: #918a90;
+          opacity: 0.8;
+          font-size: 1em;
+      }
+      .main{
+        background-color: #918a90;
+          opacity: 0.6;
+          font-size: 1em;
+          color: black;
       }
       .answer{
           grid-area: a;
@@ -76,6 +99,7 @@
       .equal{
           grid-area: t;
       }
+      
     </style>
   </head>
   <body>
@@ -83,30 +107,30 @@
     <div class="calculator">
       <div class="answer">3.14</div>
 
-      <button class= 'power'>C</button>
-      <button class = 'both'>+/-</button>
-      <button class='percent'>%</button>
+      <button class= 'power main'>C</button>
+      <button class = 'both main'>+/-</button>
+      <button class='percent main'>%</button>
 
-      <button class='divide'>/</button>
-      <button class='multiply'>X</button>
-      <button class='sub'>-</button>
-      <button class='add'>+</button>
-      <button class='equal'>=</button>
+      <button class='divide op'>/</button>
+      <button class='multiply op'>X</button>
+      <button class='sub op'>-</button>
+      <button class='add op'>+</button>
+      <button class='equal op'>=</button>
+      
+      <button class='nine num'>9</button>
+      <button class='eight num'>8</button>
+      <button class='seven num'>7</button>
 
-      <button class='nine'>9</button>
-      <button class='eight'>8</button>
-      <button class='seven'>7</button>
+      <button class='six num'>6</button>
+      <button class='five num'>5</button>
+      <button class='four num'>4</button>
 
-      <button class='six'>6</button>
-      <button class='five'>5</button>
-      <button class='four'>4</button>
+      <button class='three num'>3</button>
+      <button class='two num'>2</button>
+      <button class='one num'>1</button>
 
-      <button class='three'>3</button>
-      <button class='two'>2</button>
-      <button class='one'>1</button>
-
-      <button style = 'grid-area: r' class='zero'>0</button>
-      <button class='point'>.</button>
+      <button style = 'grid-area: r' class='zero num'>0</button>
+      <button class='point num'>.</button>
       
 
     </div>
